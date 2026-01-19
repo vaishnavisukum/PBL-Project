@@ -7,7 +7,7 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth
 
 // IMPORTANT — Replace these values with your actual Firebase project config
 const firebaseConfig = {
-  apiKey: "AIzaSyAqwagg62ETKpJDkvj6ffqb3-JgnDt17dk",
+
   authDomain: "alalankar--jewellers.firebaseapp.com",
   projectId: "alalankar--jewellers",
   storageBucket: "alalankar--jewellers.firebasestorage.app",
