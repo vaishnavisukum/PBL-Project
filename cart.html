@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alankar Jewellers - Cart</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="cart">
+    <header>
+      <h2>✨ Alankar Jewellers ✨</h2>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="collaboration.html">Collaboration</a>
+        <a href="cart.html" class="active">View Cart</a>
+        <a href="reviews.html">See Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="profile.html">Profile</a>
+        <a href="#" id="logout-btn">Logout</a>
+      </nav>
+    </header>
+
+    <h3>Your Shopping Cart 🛒</h3>
+    <div id="cart-contents"></div>
+    <p id="cart-total" style="font-weight: bold"></p>
+    <button onclick="checkout()">Checkout</button>
+
+    <script src="assets/app.js" type="module" defer></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alankar Jewellers - Reviews</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="reviews">
+    <header>
+      <h2>✨ Alankar Jewellers ✨</h2>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="collaboration.html">Collaboration</a>
+        <a href="cart.html">View Cart</a>
+        <a href="reviews.html" class="active">See Reviews</a>
+        <a href="contact.html">Contact</a>
+             <a href="profile.html">Profile</a>
+         <a href="#" id="logout-btn">Logout</a>
+      </nav>
+    </header>
+
+    <div class="review-section">
+      <div class="top-row">
+        <h3 style="margin: 0">💬 Customer Reviews</h3>
+        <div id="reviews-summary" class="small"></div>
+      </div>
+
+      <p class="small">
+        Share your thoughts about our jewellery — name, rating and message.
+        Reviews are saved locally to your browser.
+      </p>
+
+      <div id="review-form">
+        <div class="review-form-row">
+          <input
+            type="text"
+            id="review-name"
+            placeholder="Your name (optional)"
+          />
+          <div
+            class="rating-stars"
+            id="rating-stars"
+            title="Click to set rating"
+          >
+            <span class="star" data-value="1">☆</span>
+            <span class="star" data-value="2">☆</span>
+            <span class="star" data-value="3">☆</span>
+            <span class="star" data-value="4">☆</span>
+            <span class="star" data-value="5">☆</span>
+          </div>
+        </div>
+        <textarea
+          id="review-text"
+          placeholder="Write your review here..."
+        ></textarea>
+        <br />
+        <div style="display: flex; gap: 12px; justify-content: flex-end">
+          <button
+            id="review-clear"
+            style="
+              background: #ddd;
+              color: #4a0033;
+              width: auto;
+              padding: 8px 14px;
+              border-radius: 8px;
+            "
+          >
+            Clear
+          </button>
+          <button id="review-submit">Submit Review</button>
+        </div>
+      </div>
+
+      <div class="reviews-list" id="reviews-list"></div>
+    </div>
+<script src="assets/app.js" type="module" defer></script>
+
+  </body>
+</html>

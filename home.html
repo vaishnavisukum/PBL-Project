@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alankar Jewellers - Home</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="home">
+    <header>
+      
+      <nav>
+      <div>  <h2>✨ Alankar Jewellers ✨</h2>
+        <a href="home.html" class="active">Home</a>
+        <a href="collaboration.html">Collaboration</a>
+        <a href="cart.html">View Cart</a>
+        <a href="reviews.html">See Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="profile.html">Profile</a>
+       <a href="#" id="logout-btn">Logout</a>
+      </nav>
+      </div>
+    </header>
+
+    <div class="search-bar">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search jewellery or enter category..."
+      />
+      <br />
+      <select id="category-select">
+        <option value="">-- Select Jewellery Category --</option>
+        <option value="maharashtrian">Maharashtrian</option>
+        <option value="rajasthani">Rajasthani/Marwadi</option>
+        <option value="peshwai">Peshwai</option>
+        <option value="south">South Indian</option>
+      </select>
+    </div>
+
+    <div class="offer-banner">
+      💖 Exchange Offer: 15% DISCOUNT ON YOUR NEXT PURCHASE! 💖
+    </div>
+
+    <div id="jewellery-list" class="jewellery-list">
+      <div class="item" data-name="necklace">
+        <img
+          src="https://www.dhanalakshmijewellers.com/wp-content/uploads/2020/05/AntiqueGoldNecklace44-scaled.jpg"
+          alt="Necklace"
+        />
+        <p>Necklace</p>
+        <p class="price">₹3,000</p>
+        <button onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="item" data-name="bangles">
+        <img
+          src="https://i.etsystatic.com/13151875/r/il/9c83fd/3933406756/il_1080xN.3933406756_nw3f.jpg"
+          alt="Bangles"
+        />
+        <p>Bangles</p>
+        <p class="price">₹2,499</p>
+        <button onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="item" data-name="mangtikka">
+        <img
+          src="https://i.pinimg.com/originals/58/c0/a7/58c0a7aa586b53e9feb4fd53c8f8fa25.jpg"
+          alt="Mangtikka"
+        />
+        <p>Mangtikka</p>
+        <p class="price">₹2,299</p>
+        <button onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="item" data-name="nath">
+        <img
+          src="https://i.pinimg.com/736x/0f/16/c7/0f16c72e453d63efbceb8546e361d5a3.jpg"
+          alt="Nath"
+        />
+        <p>Nath</p>
+        <p class="price">₹2,999</p>
+        <button onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="item" data-name="ring">
+        <img
+          src="https://i.pinimg.com/originals/3b/6f/7f/3b6f7fd65f71189d8cdfcd8130073ab9.png"
+          alt="Ring"
+        />
+        <p>Ring</p>
+        <p class="price">₹1,999</p>
+        <button onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="item" data-name="earrings">
+        <img
+          src="https://i.pinimg.com/originals/9d/00/7b/9d007bc9f67c311a335b0d829f1a34d3.png"
+          alt="Earrings"
+        />
+        <p>Earrings</p>
+        <p class="price">₹2,499</p>
+        <button onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+    </div> 
+
+    <div style="margin-top: 20px">
+      <select
+        id="category-select-quick"
+        style="padding: 10px; border-radius: 8px; margin-bottom: 20px"
+      >
+        <option value="">-- Or jump to category --</option>
+        <option value="maharashtrian">Maharashtrian Jewellery</option>
+        <option value="gujarati">Gujarati Jewellery</option>
+        <option value="rajasthani">Rajasthani/Marwadi Jewellery</option>
+        <option value="peshwai">Peshwai Jewellery</option>
+        <option value="south">South Indian Jewellery</option>
+      </select>
+    </div>
+
+    <script src="assets/app.js" type="module" defer></script>
+
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile - Alankar Jewellers</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body data-page="profile">
+
+<header>
+  <nav>
+    <h2>✨ Alankar Jewellers ✨</h2>
+    <a href="home.html" class="active">Home</a>
+        <a href="collaboration.html">Collaboration</a>
+        <a href="cart.html">View Cart</a>
+        <a href="reviews.html">See Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="profile.html">Profile</a>
+       <a href="#" id="logout-btn">Logout</a>
+  </nav>
+</header>
+
+<div class="profile-wrapper">
+
+  <div class="profile-card">
+
+    <div class="profile-photo">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Profile Icon">
+    </div>
+
+    <h2 id="profile-name">Your Name</h2>
+    <p id="profile-email" class="small-text">your@email.com</p>
+
+    <hr />
+
+    <div class="info-section">
+      <label>Phone Number</label>
+      <input id="profile-phone" type="text" placeholder="Enter phone number" />
+    </div>
+
+    <div class="info-section">
+      <label>Special Requests (Optional)</label>
+      <textarea id="profile-request" placeholder="Any special requests…"></textarea>
+    </div>
+
+    <div class="info-section">
+      <label>Saved Address</label>
+      <textarea id="profile-address" placeholder="Your delivery address…"></textarea>
+    </div>
+
+    <button id="profile-save-btn" class="primary-btn">Save Changes</button>
+  </div>
+
+</div>
+
+<script src="assets/app.js" type="module" defer></script>
+</body>
+</html>
